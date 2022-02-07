@@ -58,22 +58,34 @@ body{
   font-family: 'Inconsolata', monospace;
   font-size: 16px;
   line-height: 1.3em;
+  font-weight: 800;
 }
 
 a{
-  color:#C7E167;
+  color: #C7E167;
 }
 
 header{
   z-index: 99;
   padding: 20px;
-  border-bottom: 1px dotted #555;
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header .links{
   font-size: 14px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-main {
+  height: 40px;
+  margin-right: 15px;
 }
 
 h2,h3,h4,h5,h6{
@@ -92,7 +104,7 @@ section{
 }
 
 .about{
-  border-right:1px dotted #555;
+  border-right:1px solid #fff;
   padding-right: 20px;
   margin-right: 20px;
   width: 33%;
@@ -196,9 +208,12 @@ p{
 .video-overlay {
   width: 100%; 
   height: 100%; 
-  background: rgba(0,0,0,0.5);
+  background: url(/assets/black-dots.png) repeat;
+  background-position: left top;
+  background-repeat: repeat;
   z-index: -99;
 }
+
 
 .blink{
   animation-name: blink;
