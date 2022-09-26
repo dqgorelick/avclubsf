@@ -155,6 +155,13 @@ p{
   padding-right: 40px;
 }
 
+ul{
+  margin-bottom: 1em;
+}
+
+li{
+  margin-left: 1em;
+}
 
 .event{
   display: flex;
